@@ -6,7 +6,7 @@ from ultralytics import YOLO
 
 BASE_DIR = Path(__file__).parent
 MODEL_PATH = BASE_DIR / "best_gramstain.pt"
-# LOGO_PATH = BASE_DIR / "images" / "i3LUniversity.png"
+# LOGO_PATH = "i3LUniversity.png"
 
 st.set_page_config(
     page_title="i3L AI System",
@@ -20,7 +20,7 @@ def load_model(path):
     return YOLO(str(path))
 
 
-# st.image(Image.open(LOGO_PATH))
+st.image(Image.open(LOGO_PATH))
 st.title("i3L AI-based Gram Staining Detection")
 
 model = load_model(MODEL_PATH)
