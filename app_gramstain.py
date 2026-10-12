@@ -6,10 +6,10 @@ import streamlit as st
 from PIL import Image
 from ultralytics import YOLO
 
-
-LOGO_PATH = "i3LUniversity.png"
-GRAM_MODEL_PATH = "best_gramstain.pt"
-COLONY_MODEL_PATH = "best_colony.pt"
+BASE_DIR = Path(__file__).parent
+LOGO_PATH = BASE_DIR / "i3LUniversity.png"
+GRAM_MODEL_PATH = BASE_DIR / "best_gramstain.pt"
+COLONY_MODEL_PATH = BASE_DIR / "best_colony.pt"
 
 st.set_page_config(
     page_title="i3L AI System",
