@@ -6,7 +6,7 @@ from ultralytics import YOLO
 
 BASE_DIR = Path(__file__).parent
 MODEL_PATH = BASE_DIR / "best_gramstain.pt"
-# LOGO_PATH = "i3LUniversity.png"
+LOGO_PATH = "i3LUniversity.png"
 
 st.set_page_config(
     page_title="i3L AI System",
